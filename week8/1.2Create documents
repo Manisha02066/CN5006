@@ -19,9 +19,9 @@ const personSchema = new mongoose.Schema({
 const Person = mongoose.model('Person', personSchema);
 
  Create and Save a document
-//manypersons = [{ name: 'Rose', age: 26, gender: "Female", salary: 3456},
-   // { name: 'Mike', age: 6, gender: "male", salary: 3456},
-   // { name: 'mary', age: 66, gender: "Female", salary: 3456}
+manypersons = [{ name: 'Rose', age: 26, gender: "Female", salary: 3456},
+    { name: 'Mike', age: 6, gender: "male", salary: 3456},
+   { name: 'mary', age: 66, gender: "Female", salary: 3456}
 ]
 Person.insertMany(manypersons).then(function(){
     console.log("Data inserted") // Success
